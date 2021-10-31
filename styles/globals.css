@@ -2,15 +2,41 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mainColor {
+  background-color: rgba(51, 51, 51, 0.733);
+}
+
+.cardBodyAnimation {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 90%;
+  left: 50%;
+  background-color: #fff;
+  transition: all 0.5s;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.card:hover .cardBodyAnimation {
+  transition: all 0.5s;
+  top: 70%;
+  opacity: 1;
 }

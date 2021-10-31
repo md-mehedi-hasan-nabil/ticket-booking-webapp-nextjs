@@ -1,0 +1,10 @@
+.bannerMain {
+  background-color: rgba(255, 255, 255, 0.93);
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8)), url(http://lorempixel.com/800/600/nature/2);
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.rowHeight {
+  min-height: 80vh;
+}
